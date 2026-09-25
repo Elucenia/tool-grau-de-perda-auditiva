@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-grau-de-perda-auditiva",
+  "version": "0.1.0",
+  "description": "Média tonal e grau de perda auditiva (OMS 2021)",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-grau-de-perda-auditiva.git"
+  }
+}

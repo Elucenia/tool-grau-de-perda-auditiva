@@ -1,0 +1,309 @@
+{
+  "tool": {
+    "id": "grau-de-perda-auditiva",
+    "title": "Média tonal e grau de perda auditiva (OMS 2021)",
+    "short": "Médias tritonal e quadritonal e grau da OMS",
+    "desc": "Calcule a média tonal (500 a 4.000 Hz) de cada orelha na audiometria e o grau de perda auditiva pela classificação do Relatório Mundial da Audição da OMS (2021).",
+    "lead": "Calcula as médias tonais por via aérea de cada orelha e classifica o grau de perda auditiva pela melhor orelha, conforme a OMS (2021).",
+    "spec": [
+      "otorrinolaringologia",
+      "medicina-do-trabalho",
+      "geriatria",
+      "pediatria"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "od500",
+        "OD · 500 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "od1k",
+        "OD · 1.000 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "od2k",
+        "OD · 2.000 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "od4k",
+        "OD · 4.000 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "oe500",
+        "OE · 500 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "oe1k",
+        "OE · 1.000 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "oe2k",
+        "OE · 2.000 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ],
+      [
+        "oe4k",
+        "OE · 4.000 Hz",
+        "num",
+        {
+          "min": -10,
+          "max": 120,
+          "step": 5,
+          "unit": "dB NA",
+          "ph": "20"
+        }
+      ]
+    ],
+    "formula": "<p><strong>Média quadritonal</strong> (OMS) = média dos limiares por via aérea em 500, 1.000, 2.000 e 4.000 Hz. <strong>Média tritonal</strong> = média de 500, 1.000 e 2.000 Hz (usada em classificações tradicionais, como a de Lloyd e Kaplan).</p><p>O grau da OMS é definido pela média quadritonal da <strong>melhor orelha</strong>.</p>",
+    "table": [
+      [
+        "Média na melhor orelha",
+        "Grau (OMS 2021)"
+      ],
+      [
+        "&lt; 20 dB",
+        "Audição normal"
+      ],
+      [
+        "20 a &lt; 35 dB",
+        "Leve"
+      ],
+      [
+        "35 a &lt; 50 dB",
+        "Moderada"
+      ],
+      [
+        "50 a &lt; 65 dB",
+        "Moderadamente grave"
+      ],
+      [
+        "65 a &lt; 80 dB",
+        "Grave"
+      ],
+      [
+        "80 a &lt; 95 dB",
+        "Profunda"
+      ],
+      [
+        "≥ 95 dB",
+        "Completa (total)"
+      ],
+      [
+        "Melhor &lt; 20 e pior ≥ 35 dB",
+        "Perda unilateral"
+      ]
+    ],
+    "tips": [
+      "Use limiares de <strong>via aérea</strong>; compare com a via óssea para separar perda condutiva (gap aéreo-ósseo ≥ 15 dB) de neurossensorial.",
+      "A média quadritonal inclui 4.000 Hz e por isso capta melhor a perda induzida por ruído e a presbiacusia do que a tritonal.",
+      "Assimetria de 15 dB ou mais entre as orelhas em duas frequências contíguas, sem causa aparente, pede investigação de lesão retrococlear (ressonância).",
+      "Na perda induzida por ruído ocupacional, o entalhe em 3.000 a 6.000 Hz aparece antes de mudar a média: olhe a curva, não só o número.",
+      "Perda súbita neurossensorial (≥ 30 dB em 3 frequências em até 72 h) é urgência: não espere nova audiometria para tratar."
+    ],
+    "sources": [
+      [
+        "Chadha S, Kamenov K, Cieza A. The world report on hearing, 2021. Bull World Health Organ, 2021.",
+        "https://doi.org/10.2471/BLT.21.285643"
+      ],
+      [
+        "Organização Mundial da Saúde. World report on hearing, 2021.",
+        "https://www.who.int/publications/i/item/9789240020481"
+      ]
+    ],
+    "cases": [
+      [
+        "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        {
+          "od500": 20,
+          "od1k": 25,
+          "od2k": 30,
+          "od4k": 35,
+          "oe500": 30,
+          "oe1k": 35,
+          "oe2k": 40,
+          "oe4k": 45
+        },
+        {
+          "raw": {
+            "od": 27.5,
+            "oe": 37.5,
+            "melhor": 27.5,
+            "tri_od": 25
+          },
+          "level": "mid",
+          "verdict": "leve"
+        }
+      ],
+      [
+        "Todas as frequências em 10 dB: audição normal",
+        {
+          "od500": 10,
+          "od1k": 10,
+          "od2k": 10,
+          "od4k": 10,
+          "oe500": 10,
+          "oe1k": 10,
+          "oe2k": 10,
+          "oe4k": 10
+        },
+        {
+          "raw": {
+            "melhor": 10
+          },
+          "level": "low",
+          "verdict": "normal"
+        }
+      ],
+      [
+        "OD 13,75 e OE 48,75: perda unilateral",
+        {
+          "od500": 10,
+          "od1k": 10,
+          "od2k": 15,
+          "od4k": 20,
+          "oe500": 40,
+          "oe1k": 45,
+          "oe2k": 50,
+          "oe4k": 60
+        },
+        {
+          "raw": {
+            "od": 13.75,
+            "oe": 48.75,
+            "unilateral": 1
+          },
+          "level": "mid",
+          "verdict": "unilateral"
+        }
+      ],
+      [
+        "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        {
+          "od500": 70,
+          "od1k": 75,
+          "od2k": 80,
+          "od4k": 85,
+          "oe500": 80,
+          "oe1k": 85,
+          "oe2k": 90,
+          "oe4k": 95
+        },
+        {
+          "raw": {
+            "melhor": 77.5,
+            "tri_od": 75
+          },
+          "level": "high",
+          "verdict": "grave"
+        }
+      ],
+      [
+        "Limite: melhor orelha com média exata de 35 dB = moderada",
+        {
+          "od500": 35,
+          "od1k": 35,
+          "od2k": 35,
+          "od4k": 35,
+          "oe500": 40,
+          "oe1k": 40,
+          "oe2k": 40,
+          "oe4k": 40
+        },
+        {
+          "raw": {
+            "melhor": 35
+          },
+          "verdict": "moderada"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
