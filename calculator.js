@@ -1,11 +1,11 @@
-/* tool-grau-de-perda-auditiva · Elucenia · https://github.com/Elucenia/tool-grau-de-perda-auditiva
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-grau-de-perda-auditiva · ELUCENIA · https://github.com/Elucenia/tool-grau-de-perda-auditiva
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"grau-de-perda-auditiva","title":"Média tonal e grau de perda auditiva (OMS 2021)","fields":[["od500","OD · 500 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["od1k","OD · 1.000 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["od2k","OD · 2.000 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["od4k","OD · 4.000 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["oe500","OE · 500 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["oe1k","OE · 1.000 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["oe2k","OE · 2.000 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}],["oe4k","OE · 4.000 Hz","num",{"min":-10,"max":120,"step":5,"unit":"dB NA","ph":"20"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
