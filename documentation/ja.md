@@ -1,0 +1,109 @@
+<!-- ELUCENIA technical documentation · grau-de-perda-auditiva · ja · no clinical/professional/rights approval -->
+
+# 純音聴力平均・難聴の程度（WHO 2021）
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/grau-de-perda-auditiva)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 右耳 · 500 Hz
+
+`od500`
+
+dB HL · 範囲: -10–120
+
+### 右耳 · 1000 Hz
+
+`od1k`
+
+dB HL · 範囲: -10–120
+
+### 右耳 · 2000 Hz
+
+`od2k`
+
+dB HL · 範囲: -10–120
+
+### 右耳 · 4000 Hz
+
+`od4k`
+
+dB HL · 範囲: -10–120
+
+### 左耳 · 500 Hz
+
+`oe500`
+
+dB HL · 範囲: -10–120
+
+### 左耳 · 1000 Hz
+
+`oe1k`
+
+dB HL · 範囲: -10–120
+
+### 左耳 · 2000 Hz
+
+`oe2k`
+
+dB HL · 範囲: -10–120
+
+### 左耳 · 4000 Hz
+
+`oe4k`
+
+dB HL · 範囲: -10–120
+
+## 方法の版
+
+WHO 2021 World Report on Hearing：PTA 4周波数500/1000/2000/4000、良聴耳；3周波数PTAは別
+
+## 記載された計算式
+
+4周波数平均（WHO）=500、1000、2000、4000 Hzの気導閾値の平均。3周波数平均=500、1000、2000 Hzの平均（Lloyd・Kaplanなどの従来分類で使用）。
+
+WHO分類は良聴耳の4周波数平均で決まります。
+
+## 限界・対象集団
+
+ここでのWHO 2021分類は良聴耳の500、1000、2000、4000 Hzの平均と成人用の等級を用います。別に表示される三周波数の平均を、この方法と混同しないでください。閾値は適切な聴力検査で得て、dB HL（dB NAとも呼ばれます）を用いる必要があります。数値上の等級だけでコミュニケーション能力、状況、リハビリテーションの必要性を示すことはできず、WHO自体もその限界を指摘しています。片側性難聴や小児への適用には個別の解釈が必要で、成人の集計値から当然のように推定すべきではありません。
+
+## 参考文献
+
+- [Chadha S, Kamenov K, Cieza A. The world report on hearing, 2021. Bull World Health Organ, 2021.](https://doi.org/10.2471/BLT.21.285643)
+
+- [Organização Mundial da Saúde. World report on hearing, 2021.](https://www.who.int/publications/i/item/9789240020481)
+
+- [WHO2021,WorldReportOnHearing,ISBN978-92-4-002048-1,primary-content mirror](https://soundhearing2030.org/pdf/World%20report%20on%20hearing.pdf)
+
+- [WHO2021 official archive](https://iris.who.int/bitstream/handle/10665/339913/9789240020481-eng.pdf)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

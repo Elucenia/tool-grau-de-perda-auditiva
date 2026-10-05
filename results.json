@@ -1,0 +1,767 @@
+{
+  "id": "grau-de-perda-auditiva",
+  "at": "2026-10-05T17:29:40.914Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/grau-de-perda-auditiva/calculator.js",
+    "bytes": 5810,
+    "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+  },
+  "cases": [
+    {
+      "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+      "input": {
+        "od500": 20,
+        "od1k": 25,
+        "od2k": 30,
+        "od4k": 35,
+        "oe500": 30,
+        "oe1k": 35,
+        "oe2k": 40,
+        "oe4k": 45
+      },
+      "obtained": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "27,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 27.5,
+          "oe": 37.5,
+          "melhor": 27.5,
+          "tri_od": 25,
+          "tri_oe": 35,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.od",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.oe",
+          "expected": 37.5,
+          "obtained": 37.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.melhor",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.tri_od",
+          "expected": 25,
+          "obtained": 25,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.od",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.oe",
+          "expected": 37.5,
+          "obtained": 37.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.melhor",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_od",
+          "expected": 25,
+          "obtained": 25,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_oe",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.unilateral",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "27,5",
+          "obtained": "27,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "dB NA",
+          "obtained": "dB NA",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Todas as frequências em 10 dB: audição normal",
+      "input": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 10,
+        "od4k": 10,
+        "oe500": 10,
+        "oe1k": 10,
+        "oe2k": 10,
+        "oe4k": 10
+      },
+      "obtained": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "10,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 10,
+          "oe": 10,
+          "melhor": 10,
+          "tri_od": 10,
+          "tri_oe": 10,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.melhor",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.od",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.oe",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.melhor",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_od",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_oe",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.unilateral",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "10,0",
+          "obtained": "10,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "dB NA",
+          "obtained": "dB NA",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "OD 13,75 e OE 48,75: perda unilateral",
+      "input": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 15,
+        "od4k": 20,
+        "oe500": 40,
+        "oe1k": 45,
+        "oe2k": 50,
+        "oe4k": 60
+      },
+      "obtained": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "13,8",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 13.75,
+          "oe": 48.75,
+          "melhor": 13.75,
+          "tri_od": 11.666666666666666,
+          "tri_oe": 45,
+          "unilateral": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.od",
+          "expected": 13.75,
+          "obtained": 13.75,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.oe",
+          "expected": 48.75,
+          "obtained": 48.75,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.unilateral",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.od",
+          "expected": 13.75,
+          "obtained": 13.75,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.oe",
+          "expected": 48.75,
+          "obtained": 48.75,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.melhor",
+          "expected": 13.75,
+          "obtained": 13.75,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_od",
+          "expected": 11.666666666666666,
+          "obtained": 11.666666666666666,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_oe",
+          "expected": 45,
+          "obtained": 45,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.unilateral",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "13,8",
+          "obtained": "13,8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "dB NA",
+          "obtained": "dB NA",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+      "input": {
+        "od500": 70,
+        "od1k": 75,
+        "od2k": 80,
+        "od4k": 85,
+        "oe500": 80,
+        "oe1k": 85,
+        "oe2k": 90,
+        "oe4k": 95
+      },
+      "obtained": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "77,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 77.5,
+          "oe": 87.5,
+          "melhor": 77.5,
+          "tri_od": 75,
+          "tri_oe": 85,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.melhor",
+          "expected": 77.5,
+          "obtained": 77.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.tri_od",
+          "expected": 75,
+          "obtained": 75,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.od",
+          "expected": 77.5,
+          "obtained": 77.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.oe",
+          "expected": 87.5,
+          "obtained": 87.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.melhor",
+          "expected": 77.5,
+          "obtained": 77.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_od",
+          "expected": 75,
+          "obtained": 75,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_oe",
+          "expected": 85,
+          "obtained": 85,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.unilateral",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "77,5",
+          "obtained": "77,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "dB NA",
+          "obtained": "dB NA",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+      "input": {
+        "od500": 35,
+        "od1k": 35,
+        "od2k": 35,
+        "od4k": 35,
+        "oe500": 40,
+        "oe1k": 40,
+        "oe2k": 40,
+        "oe4k": 40
+      },
+      "obtained": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "35,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 35,
+          "oe": 40,
+          "melhor": 35,
+          "tri_od": 35,
+          "tri_oe": 40,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.melhor",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.od",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.oe",
+          "expected": 40,
+          "obtained": 40,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.melhor",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_od",
+          "expected": 35,
+          "obtained": 35,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tri_oe",
+          "expected": 40,
+          "obtained": 40,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.unilateral",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "35,0",
+          "obtained": "35,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "dB NA",
+          "obtained": "dB NA",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 84,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

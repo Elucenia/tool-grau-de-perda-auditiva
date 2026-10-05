@@ -1,0 +1,1470 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field od500",
+    "input": {
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field od500",
+    "input": {
+      "od500": "",
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" od500",
+    "input": {
+      "od500": "NaN",
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" od500",
+    "input": {
+      "od500": "Infinity",
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" od500",
+    "input": {
+      "od500": "1e309",
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" od500",
+    "input": {
+      "od500": "invalid",
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} od500",
+    "input": {
+      "od500": {},
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true od500",
+    "input": {
+      "od500": true,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum od500",
+    "input": {
+      "od500": -11,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum od500",
+    "input": {
+      "od500": 132,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field od1k",
+    "input": {
+      "od500": 20,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field od1k",
+    "input": {
+      "od500": 20,
+      "od1k": "",
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" od1k",
+    "input": {
+      "od500": 20,
+      "od1k": "NaN",
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" od1k",
+    "input": {
+      "od500": 20,
+      "od1k": "Infinity",
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" od1k",
+    "input": {
+      "od500": 20,
+      "od1k": "1e309",
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" od1k",
+    "input": {
+      "od500": 20,
+      "od1k": "invalid",
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} od1k",
+    "input": {
+      "od500": 20,
+      "od1k": {},
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true od1k",
+    "input": {
+      "od500": 20,
+      "od1k": true,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum od1k",
+    "input": {
+      "od500": 20,
+      "od1k": -11,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum od1k",
+    "input": {
+      "od500": 20,
+      "od1k": 132,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": "",
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": "NaN",
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": "Infinity",
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": "1e309",
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": "invalid",
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": {},
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": true,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": -11,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum od2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 132,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": "",
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": "NaN",
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": "Infinity",
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": "1e309",
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": "invalid",
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": {},
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": true,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": -11,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum od4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 132,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "od4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": "",
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": "NaN",
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": "Infinity",
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": "1e309",
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": "invalid",
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": {},
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": true,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": -11,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum oe500",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 132,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe500"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": "",
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": "NaN",
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": "Infinity",
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": "1e309",
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": "invalid",
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": {},
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": true,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": -11,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum oe1k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 132,
+      "oe2k": 40,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe1k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": "",
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": "NaN",
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": "Infinity",
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": "1e309",
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": "invalid",
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": {},
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": true,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": -11,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum oe2k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 132,
+      "oe4k": 45
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe2k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": -11
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum oe4k",
+    "input": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 132
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "oe4k"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

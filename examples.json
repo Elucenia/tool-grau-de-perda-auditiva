@@ -1,6 +1,19 @@
 [
   {
-    "label": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+    "id": "grau-de-perda-auditiva",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+    "originalInput": {
+      "od500": 20,
+      "od1k": 25,
+      "od2k": 30,
+      "od4k": 35,
+      "oe500": 30,
+      "oe1k": 35,
+      "oe2k": 40,
+      "oe4k": 45
+    },
     "input": {
       "od500": 20,
       "od1k": 25,
@@ -21,20 +34,45 @@
       "level": "mid",
       "verdict": "leve"
     },
-    "originalInput": {
-      "od500": 20,
-      "od1k": 25,
-      "od2k": 30,
-      "od4k": 35,
-      "oe500": 30,
-      "oe1k": 35,
-      "oe2k": 40,
-      "oe4k": 45
+    "recordedResult": {
+      "main": [
+        "27,5",
+        "dB NA"
+      ],
+      "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+      "raw": {
+        "od": 27.5,
+        "oe": 37.5,
+        "melhor": 27.5,
+        "tri_od": 25,
+        "tri_oe": 35,
+        "unilateral": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todas as frequências em 10 dB: audição normal",
+    "id": "grau-de-perda-auditiva",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Todas as frequências em 10 dB: audição normal",
+    "originalInput": {
+      "od500": 10,
+      "od1k": 10,
+      "od2k": 10,
+      "od4k": 10,
+      "oe500": 10,
+      "oe1k": 10,
+      "oe2k": 10,
+      "oe4k": 10
+    },
     "input": {
       "od500": 10,
       "od1k": 10,
@@ -52,20 +90,45 @@
       "level": "low",
       "verdict": "normal"
     },
+    "recordedResult": {
+      "main": [
+        "10,0",
+        "dB NA"
+      ],
+      "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+      "raw": {
+        "od": 10,
+        "oe": 10,
+        "melhor": 10,
+        "tri_od": 10,
+        "tri_oe": 10,
+        "unilateral": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "grau-de-perda-auditiva",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "OD 13,75 e OE 48,75: perda unilateral",
     "originalInput": {
       "od500": 10,
       "od1k": 10,
-      "od2k": 10,
-      "od4k": 10,
-      "oe500": 10,
-      "oe1k": 10,
-      "oe2k": 10,
-      "oe4k": 10
+      "od2k": 15,
+      "od4k": 20,
+      "oe500": 40,
+      "oe1k": 45,
+      "oe2k": 50,
+      "oe4k": 60
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "OD 13,75 e OE 48,75: perda unilateral",
     "input": {
       "od500": 10,
       "od1k": 10,
@@ -85,20 +148,45 @@
       "level": "mid",
       "verdict": "unilateral"
     },
-    "originalInput": {
-      "od500": 10,
-      "od1k": 10,
-      "od2k": 15,
-      "od4k": 20,
-      "oe500": 40,
-      "oe1k": 45,
-      "oe2k": 50,
-      "oe4k": 60
+    "recordedResult": {
+      "main": [
+        "13,8",
+        "dB NA"
+      ],
+      "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+      "raw": {
+        "od": 13.75,
+        "oe": 48.75,
+        "melhor": 13.75,
+        "tri_od": 11.666666666666666,
+        "tri_oe": 45,
+        "unilateral": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+    "id": "grau-de-perda-auditiva",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+    "originalInput": {
+      "od500": 70,
+      "od1k": 75,
+      "od2k": 80,
+      "od4k": 85,
+      "oe500": 80,
+      "oe1k": 85,
+      "oe2k": 90,
+      "oe4k": 95
+    },
     "input": {
       "od500": 70,
       "od1k": 75,
@@ -117,20 +205,45 @@
       "level": "high",
       "verdict": "grave"
     },
-    "originalInput": {
-      "od500": 70,
-      "od1k": 75,
-      "od2k": 80,
-      "od4k": 85,
-      "oe500": 80,
-      "oe1k": 85,
-      "oe2k": 90,
-      "oe4k": 95
+    "recordedResult": {
+      "main": [
+        "77,5",
+        "dB NA"
+      ],
+      "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+      "raw": {
+        "od": 77.5,
+        "oe": 87.5,
+        "melhor": 77.5,
+        "tri_od": 75,
+        "tri_oe": 85,
+        "unilateral": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Limite: melhor orelha com média exata de 35 dB = moderada",
+    "id": "grau-de-perda-auditiva",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+    "originalInput": {
+      "od500": 35,
+      "od1k": 35,
+      "od2k": 35,
+      "od4k": 35,
+      "oe500": 40,
+      "oe1k": 40,
+      "oe2k": 40,
+      "oe4k": 40
+    },
     "input": {
       "od500": 35,
       "od1k": 35,
@@ -147,16 +260,28 @@
       },
       "verdict": "moderada"
     },
-    "originalInput": {
-      "od500": 35,
-      "od1k": 35,
-      "od2k": 35,
-      "od4k": 35,
-      "oe500": 40,
-      "oe1k": 40,
-      "oe2k": 40,
-      "oe4k": 40
+    "recordedResult": {
+      "main": [
+        "35,0",
+        "dB NA"
+      ],
+      "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+      "raw": {
+        "od": 35,
+        "oe": 40,
+        "melhor": 35,
+        "tri_od": 35,
+        "tri_oe": 40,
+        "unilateral": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -5,13 +5,13 @@
     "short": "Médias tritonal e quadritonal e grau da OMS",
     "desc": "Calcule a média tonal (500 a 4.000 Hz) de cada orelha na audiometria e o grau de perda auditiva pela classificação do Relatório Mundial da Audição da OMS (2021).",
     "lead": "Calcula as médias tonais por via aérea de cada orelha e classifica o grau de perda auditiva pela melhor orelha, conforme a OMS (2021).",
+    "kind": "Calculadora",
     "spec": [
       "otorrinolaringologia",
       "medicina-do-trabalho",
       "geriatria",
       "pediatria"
     ],
-    "tier": 1,
     "fields": [
       [
         "od500",
@@ -111,51 +111,6 @@
       ]
     ],
     "formula": "<p><strong>Média quadritonal</strong> (OMS) = média dos limiares por via aérea em 500, 1.000, 2.000 e 4.000 Hz. <strong>Média tritonal</strong> = média de 500, 1.000 e 2.000 Hz (usada em classificações tradicionais, como a de Lloyd e Kaplan).</p><p>O grau da OMS é definido pela média quadritonal da <strong>melhor orelha</strong>.</p>",
-    "table": [
-      [
-        "Média na melhor orelha",
-        "Grau (OMS 2021)"
-      ],
-      [
-        "&lt; 20 dB",
-        "Audição normal"
-      ],
-      [
-        "20 a &lt; 35 dB",
-        "Leve"
-      ],
-      [
-        "35 a &lt; 50 dB",
-        "Moderada"
-      ],
-      [
-        "50 a &lt; 65 dB",
-        "Moderadamente grave"
-      ],
-      [
-        "65 a &lt; 80 dB",
-        "Grave"
-      ],
-      [
-        "80 a &lt; 95 dB",
-        "Profunda"
-      ],
-      [
-        "≥ 95 dB",
-        "Completa (total)"
-      ],
-      [
-        "Melhor &lt; 20 e pior ≥ 35 dB",
-        "Perda unilateral"
-      ]
-    ],
-    "tips": [
-      "Use limiares de <strong>via aérea</strong>; compare com a via óssea para separar perda condutiva (gap aéreo-ósseo ≥ 15 dB) de neurossensorial.",
-      "A média quadritonal inclui 4.000 Hz e por isso capta melhor a perda induzida por ruído e a presbiacusia do que a tritonal.",
-      "Assimetria de 15 dB ou mais entre as orelhas em duas frequências contíguas, sem causa aparente, pede investigação de lesão retrococlear (ressonância).",
-      "Na perda induzida por ruído ocupacional, o entalhe em 3.000 a 6.000 Hz aparece antes de mudar a média: olhe a curva, não só o número.",
-      "Perda súbita neurossensorial (≥ 30 dB em 3 frequências em até 72 h) é urgência: não espere nova audiometria para tratar."
-    ],
     "sources": [
       [
         "Chadha S, Kamenov K, Cieza A. The world report on hearing, 2021. Bull World Health Organ, 2021.",
@@ -164,6 +119,14 @@
       [
         "Organização Mundial da Saúde. World report on hearing, 2021.",
         "https://www.who.int/publications/i/item/9789240020481"
+      ],
+      [
+        "WHO2021,WorldReportOnHearing,ISBN978-92-4-002048-1,primary-content mirror",
+        "https://soundhearing2030.org/pdf/World%20report%20on%20hearing.pdf"
+      ],
+      [
+        "WHO2021 official archive",
+        "https://iris.who.int/bitstream/handle/10665/339913/9789240020481-eng.pdf"
       ]
     ],
     "cases": [
@@ -273,9 +236,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -284,17 +244,369 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:47.370Z",
+      "total": 522,
+      "passed": 522,
+      "sourceRowCount": 522,
+      "uniqueApiInputCount": 522,
+      "sourceContextCount": 522,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "288647d6ca737710449d1c5c2c928020a8a005662a0eae87bac3e199e47a541e",
+        "total": 522,
+        "bankRowCount": 522,
+        "uniqueApiInputCount": 522,
+        "sourceContextCount": 522,
+        "fullStoredSourceRows": 522,
+        "localRejectionContractCount": 0,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+            "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+          "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "21×21selectedbetterearPTA boundarypairs plus81unequalfourfrequencyprofiles. Raw4frequencyPTA only; diagnoses anddisabilityexcluded. Only selected unrounded/raw numerical fields.",
+      "sourceEvidence": {
+        "review": {
+          "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+          "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+        },
+        "reading": {
+          "edition": "WHO World report on hearing2021 Table1.3, fourfrequency betterear PTA",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/root-source34-primary-r2/who-hearing2021-content-mirror.pdf",
+              "sha256": "cbd0561dbfe347ea285c342fc3652a9ea339cc140daae141a278b08db39df9c3",
+              "personallyReadPages": [
+                54,
+                56,
+                57
+              ],
+              "scope": "Personally read and visually checked definition,Table1.3 and limitations; primaryWHOcontent reproduced on SoundHearing2030, officialWHOdownload returned HTML."
+            }
+          ],
+          "excluded": [
+            "Diagnostic disability, unilateral interpretation, pediatric/clinical approval and speech innoise ability. WHOtable<20 versus surrounding prose20orbetter discrepancy retained."
+          ]
+        }
+      },
+      "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+      "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+          "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+        },
+        "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/grau-de-perda-auditiva/calculator.js",
+          "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/grau-de-perda-auditiva/calculator.js",
+          "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/grau-de-perda-auditiva/calculator.js",
+          "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+        }
+      ],
+      "qualifications": [
+        "Degree labels, disability/diagnosis/unilateral/3frequency outputs excluded.",
+        "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "WHO 2021 World Reporton Hearing:PTA 4 frequências 500/1000/2000/4000 melhororelha; PTA 3 separada",
+    "implementationVersion": "grau-de-perda-auditiva@native-2026-10-03+978f75033f6c",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8085630/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Média quadritonal (OMS) = média dos limiares por via aérea em 500, 1.000, 2.000 e 4.000 Hz. Média tritonal = média de 500, 1.000 e 2.000 Hz (usada em classificações tradicionais, como a de Lloyd e Kaplan). O grau da OMS é definido pela média quadritonal da melhor orelha .",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "od500",
+            "label": "OD · 500 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "od1k",
+            "label": "OD · 1.000 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "od2k",
+            "label": "OD · 2.000 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "od4k",
+            "label": "OD · 4.000 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "oe500",
+            "label": "OE · 500 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "oe1k",
+            "label": "OE · 1.000 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "oe2k",
+            "label": "OE · 2.000 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "oe4k",
+            "label": "OE · 4.000 Hz",
+            "type": "num",
+            "min": -10,
+            "max": 120,
+            "unit": "dB NA",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "4e4d1ae73166e67d5536ecdc3c27ed49dd2425b1471683950f851f72f5f75dbe"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Chadha S, Kamenov K, Cieza A. The world report on hearing, 2021. Bull World Health Organ, 2021.",
+          "url": "https://doi.org/10.2471/BLT.21.285643",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The world report on hearing, 2021.",
+            "year": "2021",
+            "firstPublicationDate": "2021-04-01",
+            "doi": "10.2471/blt.21.285643",
+            "pmid": "33953438",
+            "pmcid": "PMC8085630",
+            "journal": "Bulletin of the World Health Organization",
+            "authors": "Chadha S, Kamenov K, Cieza A."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8085630/",
+          "abstractAvailable": false,
+          "fullTextSha256": "fd92c14dd872e75acf4137527b8658361a72edb97a89e559cad227e64a15a8a8",
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Organização Mundial da Saúde. World report on hearing, 2021.",
+          "url": "https://www.who.int/publications/i/item/9789240020481",
+          "class": "institutional-edition-page-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "World Report on Hearing, 3 March 2021; ISBN 978-92-4-002048-1"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:47.370Z",
+        "total": 522,
+        "passed": 522,
+        "sourceRowCount": 522,
+        "uniqueApiInputCount": 522,
+        "sourceContextCount": 522,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "288647d6ca737710449d1c5c2c928020a8a005662a0eae87bac3e199e47a541e",
+          "total": 522,
+          "bankRowCount": 522,
+          "uniqueApiInputCount": 522,
+          "sourceContextCount": 522,
+          "fullStoredSourceRows": 522,
+          "localRejectionContractCount": 0,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+              "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+            "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "21×21selectedbetterearPTA boundarypairs plus81unequalfourfrequencyprofiles. Raw4frequencyPTA only; diagnoses anddisabilityexcluded. Only selected unrounded/raw numerical fields.",
+        "sourceEvidence": {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+            "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+          },
+          "reading": {
+            "edition": "WHO World report on hearing2021 Table1.3, fourfrequency betterear PTA",
+            "evidence": [
+              {
+                "file": "reports/review-20261003/root-source34-primary-r2/who-hearing2021-content-mirror.pdf",
+                "sha256": "cbd0561dbfe347ea285c342fc3652a9ea339cc140daae141a278b08db39df9c3",
+                "personallyReadPages": [
+                  54,
+                  56,
+                  57
+                ],
+                "scope": "Personally read and visually checked definition,Table1.3 and limitations; primaryWHOcontent reproduced on SoundHearing2030, officialWHOdownload returned HTML."
+              }
+            ],
+            "excluded": [
+              "Diagnostic disability, unilateral interpretation, pediatric/clinical approval and speech innoise ability. WHOtable<20 versus surrounding prose20orbetter discrepancy retained."
+            ]
+          }
+        },
+        "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+        "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+            "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+          },
+          "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/grau-de-perda-auditiva/calculator.js",
+            "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/grau-de-perda-auditiva/calculator.js",
+            "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/grau-de-perda-auditiva/calculator.js",
+            "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+          }
+        ],
+        "qualifications": [
+          "Degree labels, disability/diagnosis/unilateral/3frequency outputs excluded.",
+          "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+    },
+    "limits": "A classificação OMS 2021 aqui usa a média de 500, 1000, 2000 e 4000 Hz no melhor ouvido e seus graus para adultos; a média de três frequências exibida separadamente não deve ser confundida com esse método. Os limiares devem vir de audiometria adequada e usar dB HL, também chamado dB NA. O grau numérico não descreve sozinho capacidade de comunicação, contexto ou necessidade de reabilitação; a própria OMS ressalta essa limitação. Perda unilateral e aplicação pediátrica exigem interpretação específica e não devem ser presumidas a partir do total adulto.",
+    "limitsEvidence": {
+      "status": "direct-original-report-table-footnotes-visually-read-via-identified-mirror",
+      "sources": [
+        {
+          "url": "https://soundhearing2030.org/pdf/World%20report%20on%20hearing.pdf",
+          "edition": "WHO2021,WorldReportOnHearing,ISBN978-92-4-002048-1,primary-content mirror",
+          "readScope": "Original report mirror: cover/copyright ISBN text read, printedp38 Table1.3 and all footnotes visually read, printedp39 ICF limitations/Box1.1 read; not entire272page report. Official IRIS PDF retrieval failed.",
+          "capture": [
+            "primary-verify-limits-final23/hearing-who2021-mirror-p56.png",
+            "primary-verify-limits-final23/hearing-who2021-mirror-p57.png"
+          ],
+          "pdfSha256": "cbd0561dbfe347ea285c342fc3652a9ea339cc140daae141a278b08db39df9c3"
+        },
+        {
+          "url": "https://iris.who.int/bitstream/handle/10665/339913/9789240020481-eng.pdf",
+          "edition": "WHO2021 official archive",
+          "readScope": "Official identity; direct PDF unavailable through web tool. Primary report content read through identified mirror."
+        }
+      ],
+      "populationScope": "WHO2021 adult hearing severity based on better-ear four-frequency pure-tone average.",
+      "remainingChecks": [
+        "WHO2021 named pages read through mirror, not direct official PDF retrieval.",
+        "No adult-threshold extrapolation to pediatric communication outcomes.",
+        "Separate traditional three-frequency classification source not newly fully reviewed.",
+        "WHO translation disclaimer/licensing read but professional language/rights approval not-performed."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/grau-de-perda-auditiva/calculator.js",
+    "bytes": 5810,
+    "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5864f291aea51969007dff62f6e7e45cccdfe12bfb070063568c991780125061",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "d5928eaeb8285a31df8678b08862c7b03147d198ac1f28fb28853aaabb2627ed",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "d5928eaeb8285a31df8678b08862c7b03147d198ac1f28fb28853aaabb2627ed",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
