@@ -1,0 +1,1439 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "grau-de-perda-auditiva",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/grau-de-perda-auditiva/calculator.js",
+    "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9",
+    "bytes": 5810
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "grau-de-perda-auditiva",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+      "originalInput": {
+        "od500": 20,
+        "od1k": 25,
+        "od2k": 30,
+        "od4k": 35,
+        "oe500": 30,
+        "oe1k": 35,
+        "oe2k": 40,
+        "oe4k": 45
+      },
+      "input": {
+        "od500": 20,
+        "od1k": 25,
+        "od2k": 30,
+        "od4k": 35,
+        "oe500": 30,
+        "oe1k": 35,
+        "oe2k": 40,
+        "oe4k": 45
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "od": 27.5,
+          "oe": 37.5,
+          "melhor": 27.5,
+          "tri_od": 25
+        },
+        "level": "mid",
+        "verdict": "leve"
+      },
+      "recordedResult": {
+        "main": [
+          "27,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 27.5,
+          "oe": 37.5,
+          "melhor": 27.5,
+          "tri_od": 25,
+          "tri_oe": 35,
+          "unilateral": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "od500": 20,
+            "od1k": 25,
+            "od2k": 30,
+            "od4k": 35,
+            "oe500": 30,
+            "oe1k": 35,
+            "oe2k": 40,
+            "oe4k": 45
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+          "startedAt": "2026-10-05T17:39:08.781Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grau-de-perda-auditiva",
+              "main": [
+                "27,5",
+                "dB NA"
+              ],
+              "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+              "raw": {
+                "od": 27.5,
+                "oe": 37.5,
+                "melhor": 27.5,
+                "tri_od": 25,
+                "tri_oe": 35,
+                "unilateral": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "59947684b03ee23863a90e39aa5a0da284f5bc645dcf7ed304737041c7672d0d",
+          "bytes": 250,
+          "elapsedMs": 5.3519999999844
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "startedAt": "2026-10-05T17:39:08.781Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grau-de-perda-auditiva",
+            "main": [
+              "27,5",
+              "dB NA"
+            ],
+            "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+            "raw": {
+              "od": 27.5,
+              "oe": 37.5,
+              "melhor": 27.5,
+              "tri_od": 25,
+              "tri_oe": 35,
+              "unilateral": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "59947684b03ee23863a90e39aa5a0da284f5bc645dcf7ed304737041c7672d0d",
+        "bytes": 250,
+        "elapsedMs": 5.3519999999844
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.od",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.oe",
+            "expected": 37.5,
+            "obtained": 37.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.melhor",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.tri_od",
+            "expected": 25,
+            "obtained": 25,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.od",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.oe",
+            "expected": 37.5,
+            "obtained": 37.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhor",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_od",
+            "expected": 25,
+            "obtained": 25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_oe",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.unilateral",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "27,5",
+            "obtained": "27,5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "dB NA",
+            "obtained": "dB NA",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grau-de-perda-auditiva",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Todas as frequências em 10 dB: audição normal",
+      "originalInput": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 10,
+        "od4k": 10,
+        "oe500": 10,
+        "oe1k": 10,
+        "oe2k": 10,
+        "oe4k": 10
+      },
+      "input": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 10,
+        "od4k": 10,
+        "oe500": 10,
+        "oe1k": 10,
+        "oe2k": 10,
+        "oe4k": 10
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "melhor": 10
+        },
+        "level": "low",
+        "verdict": "normal"
+      },
+      "recordedResult": {
+        "main": [
+          "10,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 10,
+          "oe": 10,
+          "melhor": 10,
+          "tri_od": 10,
+          "tri_oe": 10,
+          "unilateral": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "od500": 10,
+            "od1k": 10,
+            "od2k": 10,
+            "od4k": 10,
+            "oe500": 10,
+            "oe1k": 10,
+            "oe2k": 10,
+            "oe4k": 10
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+          "startedAt": "2026-10-05T17:39:09.094Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grau-de-perda-auditiva",
+              "main": [
+                "10,0",
+                "dB NA"
+              ],
+              "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+              "raw": {
+                "od": 10,
+                "oe": 10,
+                "melhor": 10,
+                "tri_od": 10,
+                "tri_oe": 10,
+                "unilateral": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "85be9fef4923895244161d687348976c89324173dd9d863f2887f9c1149fadf9",
+          "bytes": 244,
+          "elapsedMs": 4.27270000000135
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "startedAt": "2026-10-05T17:39:09.094Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grau-de-perda-auditiva",
+            "main": [
+              "10,0",
+              "dB NA"
+            ],
+            "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+            "raw": {
+              "od": 10,
+              "oe": 10,
+              "melhor": 10,
+              "tri_od": 10,
+              "tri_oe": 10,
+              "unilateral": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "85be9fef4923895244161d687348976c89324173dd9d863f2887f9c1149fadf9",
+        "bytes": 244,
+        "elapsedMs": 4.27270000000135
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.melhor",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.od",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.oe",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhor",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_od",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_oe",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.unilateral",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "10,0",
+            "obtained": "10,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "dB NA",
+            "obtained": "dB NA",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grau-de-perda-auditiva",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "OD 13,75 e OE 48,75: perda unilateral",
+      "originalInput": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 15,
+        "od4k": 20,
+        "oe500": 40,
+        "oe1k": 45,
+        "oe2k": 50,
+        "oe4k": 60
+      },
+      "input": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 15,
+        "od4k": 20,
+        "oe500": 40,
+        "oe1k": 45,
+        "oe2k": 50,
+        "oe4k": 60
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "od": 13.75,
+          "oe": 48.75,
+          "unilateral": 1
+        },
+        "level": "mid",
+        "verdict": "unilateral"
+      },
+      "recordedResult": {
+        "main": [
+          "13,8",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 13.75,
+          "oe": 48.75,
+          "melhor": 13.75,
+          "tri_od": 11.666666666666666,
+          "tri_oe": 45,
+          "unilateral": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "od500": 10,
+            "od1k": 10,
+            "od2k": 15,
+            "od4k": 20,
+            "oe500": 40,
+            "oe1k": 45,
+            "oe2k": 50,
+            "oe4k": 60
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+          "startedAt": "2026-10-05T17:39:09.407Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grau-de-perda-auditiva",
+              "main": [
+                "13,8",
+                "dB NA"
+              ],
+              "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+              "raw": {
+                "od": 13.75,
+                "oe": 48.75,
+                "melhor": 13.75,
+                "tri_od": 11.666666666666666,
+                "tri_oe": 45,
+                "unilateral": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a5c076b3dbce5e07243a091bd836499097de21033e82ead7562f4f64f718ed3d",
+          "bytes": 269,
+          "elapsedMs": 6.440200000011828
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "startedAt": "2026-10-05T17:39:09.407Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grau-de-perda-auditiva",
+            "main": [
+              "13,8",
+              "dB NA"
+            ],
+            "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+            "raw": {
+              "od": 13.75,
+              "oe": 48.75,
+              "melhor": 13.75,
+              "tri_od": 11.666666666666666,
+              "tri_oe": 45,
+              "unilateral": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a5c076b3dbce5e07243a091bd836499097de21033e82ead7562f4f64f718ed3d",
+        "bytes": 269,
+        "elapsedMs": 6.440200000011828
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.od",
+            "expected": 13.75,
+            "obtained": 13.75,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.oe",
+            "expected": 48.75,
+            "obtained": 48.75,
+            "tolerance": 0.00500001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.unilateral",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.od",
+            "expected": 13.75,
+            "obtained": 13.75,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.oe",
+            "expected": 48.75,
+            "obtained": 48.75,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhor",
+            "expected": 13.75,
+            "obtained": 13.75,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_od",
+            "expected": 11.666666666666666,
+            "obtained": 11.666666666666666,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_oe",
+            "expected": 45,
+            "obtained": 45,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.unilateral",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "13,8",
+            "obtained": "13,8",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "dB NA",
+            "obtained": "dB NA",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grau-de-perda-auditiva",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+      "originalInput": {
+        "od500": 70,
+        "od1k": 75,
+        "od2k": 80,
+        "od4k": 85,
+        "oe500": 80,
+        "oe1k": 85,
+        "oe2k": 90,
+        "oe4k": 95
+      },
+      "input": {
+        "od500": 70,
+        "od1k": 75,
+        "od2k": 80,
+        "od4k": 85,
+        "oe500": 80,
+        "oe1k": 85,
+        "oe2k": 90,
+        "oe4k": 95
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "melhor": 77.5,
+          "tri_od": 75
+        },
+        "level": "high",
+        "verdict": "grave"
+      },
+      "recordedResult": {
+        "main": [
+          "77,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 77.5,
+          "oe": 87.5,
+          "melhor": 77.5,
+          "tri_od": 75,
+          "tri_oe": 85,
+          "unilateral": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "od500": 70,
+            "od1k": 75,
+            "od2k": 80,
+            "od4k": 85,
+            "oe500": 80,
+            "oe1k": 85,
+            "oe2k": 90,
+            "oe4k": 95
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+          "startedAt": "2026-10-05T17:39:09.718Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grau-de-perda-auditiva",
+              "main": [
+                "77,5",
+                "dB NA"
+              ],
+              "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+              "raw": {
+                "od": 77.5,
+                "oe": 87.5,
+                "melhor": 77.5,
+                "tri_od": 75,
+                "tri_oe": 85,
+                "unilateral": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b0d18de44ce713fd376fbda4619630e2a05db93abb0c60daa93c9c78bf8afd3d",
+          "bytes": 250,
+          "elapsedMs": 3.5231999999959953
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "startedAt": "2026-10-05T17:39:09.718Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grau-de-perda-auditiva",
+            "main": [
+              "77,5",
+              "dB NA"
+            ],
+            "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+            "raw": {
+              "od": 77.5,
+              "oe": 87.5,
+              "melhor": 77.5,
+              "tri_od": 75,
+              "tri_oe": 85,
+              "unilateral": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b0d18de44ce713fd376fbda4619630e2a05db93abb0c60daa93c9c78bf8afd3d",
+        "bytes": 250,
+        "elapsedMs": 3.5231999999959953
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.melhor",
+            "expected": 77.5,
+            "obtained": 77.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.tri_od",
+            "expected": 75,
+            "obtained": 75,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.od",
+            "expected": 77.5,
+            "obtained": 77.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.oe",
+            "expected": 87.5,
+            "obtained": 87.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhor",
+            "expected": 77.5,
+            "obtained": 77.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_od",
+            "expected": 75,
+            "obtained": 75,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_oe",
+            "expected": 85,
+            "obtained": 85,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.unilateral",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "77,5",
+            "obtained": "77,5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "dB NA",
+            "obtained": "dB NA",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grau-de-perda-auditiva",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+      "originalInput": {
+        "od500": 35,
+        "od1k": 35,
+        "od2k": 35,
+        "od4k": 35,
+        "oe500": 40,
+        "oe1k": 40,
+        "oe2k": 40,
+        "oe4k": 40
+      },
+      "input": {
+        "od500": 35,
+        "od1k": 35,
+        "od2k": 35,
+        "od4k": 35,
+        "oe500": 40,
+        "oe1k": 40,
+        "oe2k": 40,
+        "oe4k": 40
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "melhor": 35
+        },
+        "verdict": "moderada"
+      },
+      "recordedResult": {
+        "main": [
+          "35,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 35,
+          "oe": 40,
+          "melhor": 35,
+          "tri_od": 35,
+          "tri_oe": 40,
+          "unilateral": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "od500": 35,
+            "od1k": 35,
+            "od2k": 35,
+            "od4k": 35,
+            "oe500": 40,
+            "oe1k": 40,
+            "oe2k": 40,
+            "oe4k": 40
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+          "startedAt": "2026-10-05T17:39:10.029Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grau-de-perda-auditiva",
+              "main": [
+                "35,0",
+                "dB NA"
+              ],
+              "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+              "raw": {
+                "od": 35,
+                "oe": 40,
+                "melhor": 35,
+                "tri_od": 35,
+                "tri_oe": 40,
+                "unilateral": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d4ab279630729fe0972c6e1c91e013ac409ef1c97fbbfd842555ccbb5fa6dde3",
+          "bytes": 244,
+          "elapsedMs": 5.356599999999162
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grau-de-perda-auditiva/calculate",
+        "startedAt": "2026-10-05T17:39:10.029Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grau-de-perda-auditiva",
+            "main": [
+              "35,0",
+              "dB NA"
+            ],
+            "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+            "raw": {
+              "od": 35,
+              "oe": 40,
+              "melhor": 35,
+              "tri_od": 35,
+              "tri_oe": 40,
+              "unilateral": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d4ab279630729fe0972c6e1c91e013ac409ef1c97fbbfd842555ccbb5fa6dde3",
+        "bytes": 244,
+        "elapsedMs": 5.356599999999162
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.melhor",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.od",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.oe",
+            "expected": 40,
+            "obtained": 40,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhor",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_od",
+            "expected": 35,
+            "obtained": 35,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tri_oe",
+            "expected": 40,
+            "obtained": 40,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.unilateral",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "35,0",
+            "obtained": "35,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "dB NA",
+            "obtained": "dB NA",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
