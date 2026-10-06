@@ -333,7 +333,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "WHO 2021 World Reporton Hearing:PTA 4 frequências 500/1000/2000/4000 melhororelha; PTA 3 separada",
-    "implementationVersion": "grau-de-perda-auditiva@native-2026-10-03+978f75033f6c",
+    "implementationVersion": "grau-de-perda-auditiva@native-2026-10-05+5887b732a73d",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8085630/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -553,7 +553,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+      "implementationHash": "5887b732a73d15cc81ffeb60b7faeb25962660fc79bca00b26a52237c4d7259c",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "grau-de-perda-auditiva@native-2026-10-03+978f75033f6c",
+          "previousImplementationHash": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9",
+          "implementationHash": "5887b732a73d15cc81ffeb60b7faeb25962660fc79bca00b26a52237c4d7259c",
+          "scientificBodySha256": "7821af9b2ab73473a4b48c00edd854f2312efd4687fef9e8e6016146f38a42df",
+          "metadataContractHash": "4e4d1ae73166e67d5536ecdc3c27ed49dd2425b1471683950f851f72f5f75dbe",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A classificação OMS 2021 aqui usa a média de 500, 1000, 2000 e 4000 Hz no melhor ouvido e seus graus para adultos; a média de três frequências exibida separadamente não deve ser confundida com esse método. Os limiares devem vir de audiometria adequada e usar dB HL, também chamado dB NA. O grau numérico não descreve sozinho capacidade de comunicação, contexto ou necessidade de reabilitação; a própria OMS ressalta essa limitação. Perda unilateral e aplicação pediátrica exigem interpretação específica e não devem ser presumidas a partir do total adulto.",
     "limitsEvidence": {
@@ -590,20 +618,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/grau-de-perda-auditiva/calculator.js",
-    "bytes": 5810,
-    "sha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9"
+    "bytes": 6015,
+    "sha256": "5887b732a73d15cc81ffeb60b7faeb25962660fc79bca00b26a52237c4d7259c"
   },
-  "sourceToolSha256": "5864f291aea51969007dff62f6e7e45cccdfe12bfb070063568c991780125061",
+  "sourceToolSha256": "8619cc505e5cef0cbc91e35426373fcc2118d0b46f39df4caee9c21180f28a75",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "d5928eaeb8285a31df8678b08862c7b03147d198ac1f28fb28853aaabb2627ed",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "d5928eaeb8285a31df8678b08862c7b03147d198ac1f28fb28853aaabb2627ed",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -107,3 +107,62 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Grado por el mejor oído (OMS 2021): pérdida leve
+
+| Detalles del resultado | |
+| --- | --- |
+| Oído derecho (cuatro frecuencias) | 27,5 dB · pérdida leve |
+| Oído izquierdo (cuatro frecuencias) | 37,5 dB · pérdida moderada |
+| Promedio trifrequencial (500, 1k, 2k) OD / OE | 25,0 / 35,0 dB |
+
+
+### 2
+
+Grado por el mejor oído (OMS 2021): audición normal
+
+| Detalles del resultado | |
+| --- | --- |
+| Oído derecho (cuatro frecuencias) | 10,0 dB · audición normal |
+| Oído izquierdo (cuatro frecuencias) | 10,0 dB · audición normal |
+| Promedio trifrequencial (500, 1k, 2k) OD / OE | 10,0 / 10,0 dB |
+
+
+### 3
+
+Pérdida auditiva unilateral (mejor oído < 20 dB y peor ≥ 35 dB)
+
+| Detalles del resultado | |
+| --- | --- |
+| Oído derecho (cuatro frecuencias) | 13,8 dB · audición normal |
+| Oído izquierdo (cuatro frecuencias) | 48,8 dB · pérdida moderada |
+| Promedio trifrequencial (500, 1k, 2k) OD / OE | 11,7 / 45,0 dB |
+
+
+### 4
+
+Grado por el mejor oído (OMS 2021): pérdida grave
+
+| Detalles del resultado | |
+| --- | --- |
+| Oído derecho (cuatro frecuencias) | 77,5 dB · pérdida grave |
+| Oído izquierdo (cuatro frecuencias) | 87,5 dB · pérdida profunda |
+| Promedio trifrequencial (500, 1k, 2k) OD / OE | 75,0 / 85,0 dB |
+
+
+### 5
+
+Grado por el mejor oído (OMS 2021): pérdida moderada
+
+| Detalles del resultado | |
+| --- | --- |
+| Oído derecho (cuatro frecuencias) | 35,0 dB · pérdida moderada |
+| Oído izquierdo (cuatro frecuencias) | 40,0 dB · pérdida moderada |
+| Promedio trifrequencial (500, 1k, 2k) OD / OE | 35,0 / 40,0 dB |
+

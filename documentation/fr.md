@@ -107,3 +107,62 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Degré selon la meilleure oreille (OMS 2021) : perte auditive légère
+
+| Détails du résultat | |
+| --- | --- |
+| Oreille droite (quatre fréquences) | 27,5 dB · perte auditive légère |
+| Oreille gauche (quatre fréquences) | 37,5 dB · perte auditive modérée |
+| Moyenne trifréquentielle (500, 1k, 2k) OD / OG | 25,0 / 35,0 dB |
+
+
+### 2
+
+Degré selon la meilleure oreille (OMS 2021) : audition normale
+
+| Détails du résultat | |
+| --- | --- |
+| Oreille droite (quatre fréquences) | 10,0 dB · audition normale |
+| Oreille gauche (quatre fréquences) | 10,0 dB · audition normale |
+| Moyenne trifréquentielle (500, 1k, 2k) OD / OG | 10,0 / 10,0 dB |
+
+
+### 3
+
+Perte auditive unilatérale (meilleure oreille < 20 dB et pire ≥ 35 dB)
+
+| Détails du résultat | |
+| --- | --- |
+| Oreille droite (quatre fréquences) | 13,8 dB · audition normale |
+| Oreille gauche (quatre fréquences) | 48,8 dB · perte auditive modérée |
+| Moyenne trifréquentielle (500, 1k, 2k) OD / OG | 11,7 / 45,0 dB |
+
+
+### 4
+
+Degré selon la meilleure oreille (OMS 2021) : perte auditive sévère
+
+| Détails du résultat | |
+| --- | --- |
+| Oreille droite (quatre fréquences) | 77,5 dB · perte auditive sévère |
+| Oreille gauche (quatre fréquences) | 87,5 dB · perte auditive profonde |
+| Moyenne trifréquentielle (500, 1k, 2k) OD / OG | 75,0 / 85,0 dB |
+
+
+### 5
+
+Degré selon la meilleure oreille (OMS 2021) : perte auditive modérée
+
+| Détails du résultat | |
+| --- | --- |
+| Oreille droite (quatre fréquences) | 35,0 dB · perte auditive modérée |
+| Oreille gauche (quatre fréquences) | 40,0 dB · perte auditive modérée |
+| Moyenne trifréquentielle (500, 1k, 2k) OD / OG | 35,0 / 40,0 dB |
+

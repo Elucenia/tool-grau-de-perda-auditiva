@@ -107,3 +107,62 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Grau pela melhor orelha (OMS 2021): perda leve
+
+| Detalhes do resultado | |
+| --- | --- |
+| Orelha direita (quadritonal) | 27,5 dB · perda leve |
+| Orelha esquerda (quadritonal) | 37,5 dB · perda moderada |
+| Média tritonal (500, 1k, 2k) OD / OE | 25,0 / 35,0 dB |
+
+
+### 2
+
+Grau pela melhor orelha (OMS 2021): audição normal
+
+| Detalhes do resultado | |
+| --- | --- |
+| Orelha direita (quadritonal) | 10,0 dB · audição normal |
+| Orelha esquerda (quadritonal) | 10,0 dB · audição normal |
+| Média tritonal (500, 1k, 2k) OD / OE | 10,0 / 10,0 dB |
+
+
+### 3
+
+Perda auditiva unilateral (melhor orelha < 20 dB e pior ≥ 35 dB)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Orelha direita (quadritonal) | 13,8 dB · audição normal |
+| Orelha esquerda (quadritonal) | 48,8 dB · perda moderada |
+| Média tritonal (500, 1k, 2k) OD / OE | 11,7 / 45,0 dB |
+
+
+### 4
+
+Grau pela melhor orelha (OMS 2021): perda grave
+
+| Detalhes do resultado | |
+| --- | --- |
+| Orelha direita (quadritonal) | 77,5 dB · perda grave |
+| Orelha esquerda (quadritonal) | 87,5 dB · perda profunda |
+| Média tritonal (500, 1k, 2k) OD / OE | 75,0 / 85,0 dB |
+
+
+### 5
+
+Grau pela melhor orelha (OMS 2021): perda moderada
+
+| Detalhes do resultado | |
+| --- | --- |
+| Orelha direita (quadritonal) | 35,0 dB · perda moderada |
+| Orelha esquerda (quadritonal) | 40,0 dB · perda moderada |
+| Média tritonal (500, 1k, 2k) OD / OE | 35,0 / 40,0 dB |
+

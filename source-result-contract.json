@@ -1,0 +1,431 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "grau-de-perda-auditiva",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ba266e3441fb8c6360d615b57f000ac3821c4b52",
+    "oldEngineSha256": "978f75033f6c081c47030a9be4b978d59031102aeee92850d1ff20a3afba51d9",
+    "currentEngineSha256": "5887b732a73d15cc81ffeb60b7faeb25962660fc79bca00b26a52237c4d7259c"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+      "input": {
+        "od500": 20,
+        "od1k": 25,
+        "od2k": 30,
+        "od4k": 35,
+        "oe500": 30,
+        "oe1k": 35,
+        "oe2k": 40,
+        "oe4k": 45
+      },
+      "publicOutput": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "27,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 27.5,
+          "oe": 37.5,
+          "melhor": 27.5,
+          "tri_od": 25,
+          "tri_oe": 35,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "od": 27.5,
+          "oe": 37.5,
+          "melhor": 27.5,
+          "tri_od": 25
+        },
+        "level": "mid",
+        "verdict": "leve"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "27,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "level": "mid",
+        "verdict": "Grau pela melhor orelha (OMS 2021): perda leve",
+        "rows": [
+          [
+            "Orelha direita (quadritonal)",
+            "27,5 dB · perda leve"
+          ],
+          [
+            "Orelha esquerda (quadritonal)",
+            "37,5 dB · perda moderada"
+          ],
+          [
+            "Média tritonal (500, 1k, 2k) OD / OE",
+            "25,0 / 35,0 dB"
+          ]
+        ],
+        "raw": {
+          "od": 27.5,
+          "oe": 37.5,
+          "melhor": 27.5,
+          "tri_od": 25,
+          "tri_oe": 35,
+          "unilateral": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Todas as frequências em 10 dB: audição normal",
+      "input": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 10,
+        "od4k": 10,
+        "oe500": 10,
+        "oe1k": 10,
+        "oe2k": 10,
+        "oe4k": 10
+      },
+      "publicOutput": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "10,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 10,
+          "oe": 10,
+          "melhor": 10,
+          "tri_od": 10,
+          "tri_oe": 10,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "melhor": 10
+        },
+        "level": "low",
+        "verdict": "normal"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "level": "low",
+        "verdict": "Grau pela melhor orelha (OMS 2021): audição normal",
+        "rows": [
+          [
+            "Orelha direita (quadritonal)",
+            "10,0 dB · audição normal"
+          ],
+          [
+            "Orelha esquerda (quadritonal)",
+            "10,0 dB · audição normal"
+          ],
+          [
+            "Média tritonal (500, 1k, 2k) OD / OE",
+            "10,0 / 10,0 dB"
+          ]
+        ],
+        "raw": {
+          "od": 10,
+          "oe": 10,
+          "melhor": 10,
+          "tri_od": 10,
+          "tri_oe": 10,
+          "unilateral": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "OD 13,75 e OE 48,75: perda unilateral",
+      "input": {
+        "od500": 10,
+        "od1k": 10,
+        "od2k": 15,
+        "od4k": 20,
+        "oe500": 40,
+        "oe1k": 45,
+        "oe2k": 50,
+        "oe4k": 60
+      },
+      "publicOutput": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "13,8",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 13.75,
+          "oe": 48.75,
+          "melhor": 13.75,
+          "tri_od": 11.666666666666666,
+          "tri_oe": 45,
+          "unilateral": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "od": 13.75,
+          "oe": 48.75,
+          "unilateral": 1
+        },
+        "level": "mid",
+        "verdict": "unilateral"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "13,8",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "level": "mid",
+        "verdict": "Perda auditiva unilateral (melhor orelha &lt; 20 dB e pior ≥ 35 dB)",
+        "rows": [
+          [
+            "Orelha direita (quadritonal)",
+            "13,8 dB · audição normal"
+          ],
+          [
+            "Orelha esquerda (quadritonal)",
+            "48,8 dB · perda moderada"
+          ],
+          [
+            "Média tritonal (500, 1k, 2k) OD / OE",
+            "11,7 / 45,0 dB"
+          ]
+        ],
+        "raw": {
+          "od": 13.75,
+          "oe": 48.75,
+          "melhor": 13.75,
+          "tri_od": 11.666666666666666,
+          "tri_oe": 45,
+          "unilateral": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+      "input": {
+        "od500": 70,
+        "od1k": 75,
+        "od2k": 80,
+        "od4k": 85,
+        "oe500": 80,
+        "oe1k": 85,
+        "oe2k": 90,
+        "oe4k": 95
+      },
+      "publicOutput": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "77,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 77.5,
+          "oe": 87.5,
+          "melhor": 77.5,
+          "tri_od": 75,
+          "tri_oe": 85,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "melhor": 77.5,
+          "tri_od": 75
+        },
+        "level": "high",
+        "verdict": "grave"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "77,5",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "level": "high",
+        "verdict": "Grau pela melhor orelha (OMS 2021): perda grave",
+        "rows": [
+          [
+            "Orelha direita (quadritonal)",
+            "77,5 dB · perda grave"
+          ],
+          [
+            "Orelha esquerda (quadritonal)",
+            "87,5 dB · perda profunda"
+          ],
+          [
+            "Média tritonal (500, 1k, 2k) OD / OE",
+            "75,0 / 85,0 dB"
+          ]
+        ],
+        "raw": {
+          "od": 77.5,
+          "oe": 87.5,
+          "melhor": 77.5,
+          "tri_od": 75,
+          "tri_oe": 85,
+          "unilateral": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+      "input": {
+        "od500": 35,
+        "od1k": 35,
+        "od2k": 35,
+        "od4k": 35,
+        "oe500": 40,
+        "oe1k": 40,
+        "oe2k": 40,
+        "oe4k": 40
+      },
+      "publicOutput": {
+        "id": "grau-de-perda-auditiva",
+        "main": [
+          "35,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "raw": {
+          "od": 35,
+          "oe": 40,
+          "melhor": 35,
+          "tri_od": 35,
+          "tri_oe": 40,
+          "unilateral": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "melhor": 35
+        },
+        "verdict": "moderada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "35,0",
+          "dB NA"
+        ],
+        "label": "Média de 500, 1.000, 2.000 e 4.000 Hz na melhor orelha",
+        "level": "mid",
+        "verdict": "Grau pela melhor orelha (OMS 2021): perda moderada",
+        "rows": [
+          [
+            "Orelha direita (quadritonal)",
+            "35,0 dB · perda moderada"
+          ],
+          [
+            "Orelha esquerda (quadritonal)",
+            "40,0 dB · perda moderada"
+          ],
+          [
+            "Média tritonal (500, 1k, 2k) OD / OE",
+            "35,0 / 40,0 dB"
+          ]
+        ],
+        "raw": {
+          "od": 35,
+          "oe": 40,
+          "melhor": 35,
+          "tri_od": 35,
+          "tri_oe": 40,
+          "unilateral": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

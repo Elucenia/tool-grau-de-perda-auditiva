@@ -107,3 +107,62 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Degree by the better ear (WHO 2021): mild hearing loss
+
+| Result details | |
+| --- | --- |
+| Right ear (four-frequency) | 27.5 dB · mild hearing loss |
+| Left ear (four-frequency) | 37.5 dB · moderate hearing loss |
+| Trifrequency average (500, 1k, 2k) RE / LE | 25.0 / 35.0 dB |
+
+
+### 2
+
+Degree by the better ear (WHO 2021): normal hearing
+
+| Result details | |
+| --- | --- |
+| Right ear (four-frequency) | 10.0 dB · normal hearing |
+| Left ear (four-frequency) | 10.0 dB · normal hearing |
+| Trifrequency average (500, 1k, 2k) RE / LE | 10.0 / 10.0 dB |
+
+
+### 3
+
+Unilateral hearing loss (better ear < 20 dB and worse ≥ 35 dB)
+
+| Result details | |
+| --- | --- |
+| Right ear (four-frequency) | 13.8 dB · normal hearing |
+| Left ear (four-frequency) | 48.8 dB · moderate hearing loss |
+| Trifrequency average (500, 1k, 2k) RE / LE | 11.7 / 45.0 dB |
+
+
+### 4
+
+Degree by the better ear (WHO 2021): severe hearing loss
+
+| Result details | |
+| --- | --- |
+| Right ear (four-frequency) | 77.5 dB · severe hearing loss |
+| Left ear (four-frequency) | 87.5 dB · profound hearing loss |
+| Trifrequency average (500, 1k, 2k) RE / LE | 75.0 / 85.0 dB |
+
+
+### 5
+
+Degree by the better ear (WHO 2021): moderate hearing loss
+
+| Result details | |
+| --- | --- |
+| Right ear (four-frequency) | 35.0 dB · moderate hearing loss |
+| Left ear (four-frequency) | 40.0 dB · moderate hearing loss |
+| Trifrequency average (500, 1k, 2k) RE / LE | 35.0 / 40.0 dB |
+

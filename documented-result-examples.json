@@ -1,0 +1,3077 @@
+{
+  "id": "grau-de-perda-auditiva",
+  "implementationVersion": "grau-de-perda-auditiva@native-2026-10-05+5887b732a73d",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orelha direita (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "27,5 dB · perda leve",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orelha esquerda (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "37,5 dB · perda moderada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Média tritonal (500, 1k, 2k) OD / OE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "25,0 / 35,0 dB",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau pela melhor orelha (OMS 2021): perda leve",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orelha direita (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0 dB · audição normal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orelha esquerda (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0 dB · audição normal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Média tritonal (500, 1k, 2k) OD / OE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10,0 / 10,0 dB",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau pela melhor orelha (OMS 2021): audição normal",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orelha direita (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "13,8 dB · audição normal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orelha esquerda (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "48,8 dB · perda moderada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Média tritonal (500, 1k, 2k) OD / OE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "11,7 / 45,0 dB",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Perda auditiva unilateral (melhor orelha < 20 dB e pior ≥ 35 dB)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orelha direita (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "77,5 dB · perda grave",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orelha esquerda (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "87,5 dB · perda profunda",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Média tritonal (500, 1k, 2k) OD / OE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "75,0 / 85,0 dB",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau pela melhor orelha (OMS 2021): perda grave",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orelha direita (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "35,0 dB · perda moderada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orelha esquerda (quadritonal)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "40,0 dB · perda moderada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Média tritonal (500, 1k, 2k) OD / OE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "35,0 / 40,0 dB",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grau pela melhor orelha (OMS 2021): perda moderada",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27.5 dB · mild hearing loss",
+                "locale": "en",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37.5 dB · moderate hearing loss",
+                "locale": "en",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Trifrequency average (500, 1k, 2k) RE / LE",
+                "locale": "en",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25.0 / 35.0 dB",
+                "locale": "en",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degree by the better ear (WHO 2021): mild hearing loss",
+            "locale": "en",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10.0 dB · normal hearing",
+                "locale": "en",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10.0 dB · normal hearing",
+                "locale": "en",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Trifrequency average (500, 1k, 2k) RE / LE",
+                "locale": "en",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10.0 / 10.0 dB",
+                "locale": "en",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degree by the better ear (WHO 2021): normal hearing",
+            "locale": "en",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13.8 dB · normal hearing",
+                "locale": "en",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48.8 dB · moderate hearing loss",
+                "locale": "en",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Trifrequency average (500, 1k, 2k) RE / LE",
+                "locale": "en",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11.7 / 45.0 dB",
+                "locale": "en",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Unilateral hearing loss (better ear < 20 dB and worse ≥ 35 dB)",
+            "locale": "en",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77.5 dB · severe hearing loss",
+                "locale": "en",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87.5 dB · profound hearing loss",
+                "locale": "en",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Trifrequency average (500, 1k, 2k) RE / LE",
+                "locale": "en",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75.0 / 85.0 dB",
+                "locale": "en",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degree by the better ear (WHO 2021): severe hearing loss",
+            "locale": "en",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Right ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35.0 dB · moderate hearing loss",
+                "locale": "en",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Left ear (four-frequency)",
+                "locale": "en",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40.0 dB · moderate hearing loss",
+                "locale": "en",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Trifrequency average (500, 1k, 2k) RE / LE",
+                "locale": "en",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35.0 / 40.0 dB",
+                "locale": "en",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degree by the better ear (WHO 2021): moderate hearing loss",
+            "locale": "en",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oído derecho (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27,5 dB · pérdida leve",
+                "locale": "es",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oído izquierdo (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37,5 dB · pérdida moderada",
+                "locale": "es",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Promedio trifrequencial (500, 1k, 2k) OD / OE",
+                "locale": "es",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25,0 / 35,0 dB",
+                "locale": "es",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado por el mejor oído (OMS 2021): pérdida leve",
+            "locale": "es",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oído derecho (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10,0 dB · audición normal",
+                "locale": "es",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oído izquierdo (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10,0 dB · audición normal",
+                "locale": "es",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Promedio trifrequencial (500, 1k, 2k) OD / OE",
+                "locale": "es",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10,0 / 10,0 dB",
+                "locale": "es",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado por el mejor oído (OMS 2021): audición normal",
+            "locale": "es",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oído derecho (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13,8 dB · audición normal",
+                "locale": "es",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oído izquierdo (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48,8 dB · pérdida moderada",
+                "locale": "es",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Promedio trifrequencial (500, 1k, 2k) OD / OE",
+                "locale": "es",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11,7 / 45,0 dB",
+                "locale": "es",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Pérdida auditiva unilateral (mejor oído < 20 dB y peor ≥ 35 dB)",
+            "locale": "es",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oído derecho (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77,5 dB · pérdida grave",
+                "locale": "es",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oído izquierdo (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87,5 dB · pérdida profunda",
+                "locale": "es",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Promedio trifrequencial (500, 1k, 2k) OD / OE",
+                "locale": "es",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75,0 / 85,0 dB",
+                "locale": "es",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado por el mejor oído (OMS 2021): pérdida grave",
+            "locale": "es",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oído derecho (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35,0 dB · pérdida moderada",
+                "locale": "es",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oído izquierdo (cuatro frecuencias)",
+                "locale": "es",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40,0 dB · pérdida moderada",
+                "locale": "es",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Promedio trifrequencial (500, 1k, 2k) OD / OE",
+                "locale": "es",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35,0 / 40,0 dB",
+                "locale": "es",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado por el mejor oído (OMS 2021): pérdida moderada",
+            "locale": "es",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oreille droite (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27,5 dB · perte auditive légère",
+                "locale": "fr",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oreille gauche (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37,5 dB · perte auditive modérée",
+                "locale": "fr",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Moyenne trifréquentielle (500, 1k, 2k) OD / OG",
+                "locale": "fr",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25,0 / 35,0 dB",
+                "locale": "fr",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degré selon la meilleure oreille (OMS 2021) : perte auditive légère",
+            "locale": "fr",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oreille droite (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10,0 dB · audition normale",
+                "locale": "fr",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oreille gauche (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10,0 dB · audition normale",
+                "locale": "fr",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Moyenne trifréquentielle (500, 1k, 2k) OD / OG",
+                "locale": "fr",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10,0 / 10,0 dB",
+                "locale": "fr",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degré selon la meilleure oreille (OMS 2021) : audition normale",
+            "locale": "fr",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oreille droite (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13,8 dB · audition normale",
+                "locale": "fr",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oreille gauche (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48,8 dB · perte auditive modérée",
+                "locale": "fr",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Moyenne trifréquentielle (500, 1k, 2k) OD / OG",
+                "locale": "fr",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11,7 / 45,0 dB",
+                "locale": "fr",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Perte auditive unilatérale (meilleure oreille < 20 dB et pire ≥ 35 dB)",
+            "locale": "fr",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oreille droite (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77,5 dB · perte auditive sévère",
+                "locale": "fr",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oreille gauche (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87,5 dB · perte auditive profonde",
+                "locale": "fr",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Moyenne trifréquentielle (500, 1k, 2k) OD / OG",
+                "locale": "fr",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75,0 / 85,0 dB",
+                "locale": "fr",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degré selon la meilleure oreille (OMS 2021) : perte auditive sévère",
+            "locale": "fr",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Oreille droite (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35,0 dB · perte auditive modérée",
+                "locale": "fr",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Oreille gauche (quatre fréquences)",
+                "locale": "fr",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40,0 dB · perte auditive modérée",
+                "locale": "fr",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Moyenne trifréquentielle (500, 1k, 2k) OD / OG",
+                "locale": "fr",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35,0 / 40,0 dB",
+                "locale": "fr",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Degré selon la meilleure oreille (OMS 2021) : perte auditive modérée",
+            "locale": "fr",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechtes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27,5 dB · leichte Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linkes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37,5 dB · mäßige Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr",
+                "locale": "de",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25,0 / 35,0 dB",
+                "locale": "de",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad nach dem besseren Ohr (WHO 2021): leichte Hörminderung",
+            "locale": "de",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechtes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10,0 dB · normales Hörvermögen",
+                "locale": "de",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linkes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10,0 dB · normales Hörvermögen",
+                "locale": "de",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr",
+                "locale": "de",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10,0 / 10,0 dB",
+                "locale": "de",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad nach dem besseren Ohr (WHO 2021): normales Hörvermögen",
+            "locale": "de",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechtes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13,8 dB · normales Hörvermögen",
+                "locale": "de",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linkes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48,8 dB · mäßige Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr",
+                "locale": "de",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11,7 / 45,0 dB",
+                "locale": "de",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Einseitige Hörminderung (besseres Ohr < 20 dB und schlechteres ≥ 35 dB)",
+            "locale": "de",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechtes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77,5 dB · schwere Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linkes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87,5 dB · hochgradige Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr",
+                "locale": "de",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75,0 / 85,0 dB",
+                "locale": "de",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad nach dem besseren Ohr (WHO 2021): schwere Hörminderung",
+            "locale": "de",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rechtes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35,0 dB · mäßige Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Linkes Ohr (Vierfrequenztöne)",
+                "locale": "de",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40,0 dB · mäßige Hörminderung",
+                "locale": "de",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr",
+                "locale": "de",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35,0 / 40,0 dB",
+                "locale": "de",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grad nach dem besseren Ohr (WHO 2021): mäßige Hörminderung",
+            "locale": "de",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orecchio destro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27,5 dB · perdita uditiva lieve",
+                "locale": "it",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orecchio sinistro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37,5 dB · perdita uditiva moderata",
+                "locale": "it",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Media trifrequenziale (500, 1k, 2k) OD / OE",
+                "locale": "it",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25,0 / 35,0 dB",
+                "locale": "it",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado in base all’orecchio migliore (OMS 2021): perdita uditiva lieve",
+            "locale": "it",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orecchio destro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10,0 dB · udito normale",
+                "locale": "it",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orecchio sinistro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10,0 dB · udito normale",
+                "locale": "it",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Media trifrequenziale (500, 1k, 2k) OD / OE",
+                "locale": "it",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10,0 / 10,0 dB",
+                "locale": "it",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado in base all’orecchio migliore (OMS 2021): udito normale",
+            "locale": "it",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orecchio destro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13,8 dB · udito normale",
+                "locale": "it",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orecchio sinistro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48,8 dB · perdita uditiva moderata",
+                "locale": "it",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Media trifrequenziale (500, 1k, 2k) OD / OE",
+                "locale": "it",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11,7 / 45,0 dB",
+                "locale": "it",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Perdita uditiva unilaterale (orecchio migliore < 20 dB e peggiore ≥ 35 dB)",
+            "locale": "it",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orecchio destro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77,5 dB · perdita uditiva grave",
+                "locale": "it",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orecchio sinistro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87,5 dB · perdita uditiva profonda",
+                "locale": "it",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Media trifrequenziale (500, 1k, 2k) OD / OE",
+                "locale": "it",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75,0 / 85,0 dB",
+                "locale": "it",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado in base all’orecchio migliore (OMS 2021): perdita uditiva grave",
+            "locale": "it",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Orecchio destro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35,0 dB · perdita uditiva moderata",
+                "locale": "it",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Orecchio sinistro (quattro frequenze)",
+                "locale": "it",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40,0 dB · perdita uditiva moderata",
+                "locale": "it",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Media trifrequenziale (500, 1k, 2k) OD / OE",
+                "locale": "it",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35,0 / 40,0 dB",
+                "locale": "it",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Grado in base all’orecchio migliore (OMS 2021): perdita uditiva moderata",
+            "locale": "it",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأذن اليمنى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "٢٧٫٥ dB · فقدان سمع خفيف",
+                "locale": "ar",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الأذن اليسرى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "٣٧٫٥ dB · فقدان سمع متوسط",
+                "locale": "ar",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المتوسط ثلاثي الترددات (500، 1k، 2k) الأذن اليمنى / الأذن اليسرى",
+                "locale": "ar",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "٢٥٫٠ / ٣٥٫٠ dB",
+                "locale": "ar",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة بحسب الأذن الأفضل (منظمة الصحة العالمية 2021): فقدان سمع خفيف",
+            "locale": "ar",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأذن اليمنى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "١٠٫٠ dB · سمع طبيعي",
+                "locale": "ar",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الأذن اليسرى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "١٠٫٠ dB · سمع طبيعي",
+                "locale": "ar",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المتوسط ثلاثي الترددات (500، 1k، 2k) الأذن اليمنى / الأذن اليسرى",
+                "locale": "ar",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "١٠٫٠ / ١٠٫٠ dB",
+                "locale": "ar",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة بحسب الأذن الأفضل (منظمة الصحة العالمية 2021): سمع طبيعي",
+            "locale": "ar",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأذن اليمنى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "١٣٫٨ dB · سمع طبيعي",
+                "locale": "ar",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الأذن اليسرى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "٤٨٫٨ dB · فقدان سمع متوسط",
+                "locale": "ar",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المتوسط ثلاثي الترددات (500، 1k، 2k) الأذن اليمنى / الأذن اليسرى",
+                "locale": "ar",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "١١٫٧ / ٤٥٫٠ dB",
+                "locale": "ar",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فقدان سمع أحادي الجانب (الأذن الأفضل < 20 dB والأسوأ ≥ 35 dB)",
+            "locale": "ar",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأذن اليمنى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "٧٧٫٥ dB · فقدان سمع شديد",
+                "locale": "ar",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الأذن اليسرى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "٨٧٫٥ dB · فقدان سمع عميق",
+                "locale": "ar",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المتوسط ثلاثي الترددات (500، 1k، 2k) الأذن اليمنى / الأذن اليسرى",
+                "locale": "ar",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "٧٥٫٠ / ٨٥٫٠ dB",
+                "locale": "ar",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة بحسب الأذن الأفضل (منظمة الصحة العالمية 2021): فقدان سمع شديد",
+            "locale": "ar",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأذن اليمنى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "٣٥٫٠ dB · فقدان سمع متوسط",
+                "locale": "ar",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الأذن اليسرى (أربع نغمات ترددية)",
+                "locale": "ar",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "٤٠٫٠ dB · فقدان سمع متوسط",
+                "locale": "ar",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المتوسط ثلاثي الترددات (500، 1k، 2k) الأذن اليمنى / الأذن اليسرى",
+                "locale": "ar",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "٣٥٫٠ / ٤٠٫٠ dB",
+                "locale": "ar",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الدرجة بحسب الأذن الأفضل (منظمة الصحة العالمية 2021): فقدان سمع متوسط",
+            "locale": "ar",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27.5 dB · 轻度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37.5 dB · 中度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "三频平均值（500、1k、2k）OD / OE",
+                "locale": "zh",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25.0 / 35.0 dB",
+                "locale": "zh",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按较好耳（WHO 2021）分级：轻度听力损失",
+            "locale": "zh",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10.0 dB · 正常听力",
+                "locale": "zh",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10.0 dB · 正常听力",
+                "locale": "zh",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "三频平均值（500、1k、2k）OD / OE",
+                "locale": "zh",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10.0 / 10.0 dB",
+                "locale": "zh",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按较好耳（WHO 2021）分级：正常听力",
+            "locale": "zh",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13.8 dB · 正常听力",
+                "locale": "zh",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48.8 dB · 中度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "三频平均值（500、1k、2k）OD / OE",
+                "locale": "zh",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11.7 / 45.0 dB",
+                "locale": "zh",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "单侧听力损失（较好耳 < 20 dB，较差耳 ≥ 35 dB）",
+            "locale": "zh",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77.5 dB · 重度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87.5 dB · 极重度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "三频平均值（500、1k、2k）OD / OE",
+                "locale": "zh",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75.0 / 85.0 dB",
+                "locale": "zh",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按较好耳（WHO 2021）分级：重度听力损失",
+            "locale": "zh",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35.0 dB · 中度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（四频）",
+                "locale": "zh",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40.0 dB · 中度听力损失",
+                "locale": "zh",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "三频平均值（500、1k、2k）OD / OE",
+                "locale": "zh",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35.0 / 40.0 dB",
+                "locale": "zh",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按较好耳（WHO 2021）分级：中度听力损失",
+            "locale": "zh",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27.5 dB · 軽度難聴",
+                "locale": "ja",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37.5 dB · 中等度難聴",
+                "locale": "ja",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "3周波数平均（500、1k、2k）OD / OE",
+                "locale": "ja",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25.0 / 35.0 dB",
+                "locale": "ja",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "良聴耳による程度（WHO 2021）：軽度難聴",
+            "locale": "ja",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10.0 dB · 正常聴力",
+                "locale": "ja",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10.0 dB · 正常聴力",
+                "locale": "ja",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "3周波数平均（500、1k、2k）OD / OE",
+                "locale": "ja",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10.0 / 10.0 dB",
+                "locale": "ja",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "良聴耳による程度（WHO 2021）：正常聴力",
+            "locale": "ja",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13.8 dB · 正常聴力",
+                "locale": "ja",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48.8 dB · 中等度難聴",
+                "locale": "ja",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "3周波数平均（500、1k、2k）OD / OE",
+                "locale": "ja",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11.7 / 45.0 dB",
+                "locale": "ja",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "片側難聴（良聴耳 < 20 dB、悪聴耳 ≥ 35 dB）",
+            "locale": "ja",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77.5 dB · 重度難聴",
+                "locale": "ja",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87.5 dB · 高度難聴",
+                "locale": "ja",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "3周波数平均（500、1k、2k）OD / OE",
+                "locale": "ja",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75.0 / 85.0 dB",
+                "locale": "ja",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "良聴耳による程度（WHO 2021）：重度難聴",
+            "locale": "ja",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "右耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35.0 dB · 中等度難聴",
+                "locale": "ja",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "左耳（4周波数）",
+                "locale": "ja",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40.0 dB · 中等度難聴",
+                "locale": "ja",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "3周波数平均（500、1k、2k）OD / OE",
+                "locale": "ja",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35.0 / 40.0 dB",
+                "locale": "ja",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "良聴耳による程度（WHO 2021）：中等度難聴",
+            "locale": "ja",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "OD 20/25/30/35 (27,5) e OE 30/35/40/45 (37,5): leve pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "27.5 dB · हल्की श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-1d99e65bca0005dadf9a",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "37.5 dB · मध्यम श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  37.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "त्रि-आवृत्ति औसत (500, 1k, 2k) दायाँ कान / बायाँ कान",
+                "locale": "hi",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "25.0 / 35.0 dB",
+                "locale": "hi",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  25,
+                  35
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बेहतर कान के अनुसार डिग्री (WHO 2021): हल्की श्रवण हानि",
+            "locale": "hi",
+            "template": "documented-authored-28349f5ea05fe9d765c1"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as frequências em 10 dB: audição normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "10.0 dB · सामान्य श्रवण",
+                "locale": "hi",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "10.0 dB · सामान्य श्रवण",
+                "locale": "hi",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "त्रि-आवृत्ति औसत (500, 1k, 2k) दायाँ कान / बायाँ कान",
+                "locale": "hi",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "10.0 / 10.0 dB",
+                "locale": "hi",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  10,
+                  10
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बेहतर कान के अनुसार डिग्री (WHO 2021): सामान्य श्रवण",
+            "locale": "hi",
+            "template": "documented-authored-b4186872b25b9d911e1c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "OD 13,75 e OE 48,75: perda unilateral",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "13.8 dB · सामान्य श्रवण",
+                "locale": "hi",
+                "template": "documented-authored-edf07b6b57fa33c097c0",
+                "sourceNumbers": [
+                  13.8
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "48.8 dB · मध्यम श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  48.8
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "त्रि-आवृत्ति औसत (500, 1k, 2k) दायाँ कान / बायाँ कान",
+                "locale": "hi",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "11.7 / 45.0 dB",
+                "locale": "hi",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  11.7,
+                  45
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एकतरफा श्रवण हानि (बेहतर कान < 20 dB और खराब कान ≥ 35 dB)",
+            "locale": "hi",
+            "template": "documented-authored-2a9c45da8a492c0a67f4"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "OD 77,5 e OE 87,5: perda grave pela melhor orelha",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "77.5 dB · गंभीर श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-04108984f08e8d01b166",
+                "sourceNumbers": [
+                  77.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "87.5 dB · गहन श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-a3e3d8e9dc3f7b267768",
+                "sourceNumbers": [
+                  87.5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "त्रि-आवृत्ति औसत (500, 1k, 2k) दायाँ कान / बायाँ कान",
+                "locale": "hi",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "75.0 / 85.0 dB",
+                "locale": "hi",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  75,
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बेहतर कान के अनुसार डिग्री (WHO 2021): गंभीर श्रवण हानि",
+            "locale": "hi",
+            "template": "documented-authored-aabadaa0c5bf26c3fecd"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: melhor orelha com média exata de 35 dB = moderada",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "दायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-f0c8d2b222bd9978cd07"
+              },
+              "value": {
+                "text": "35.0 dB · मध्यम श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  35
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "बायाँ कान (चार-आवृत्ति)",
+                "locale": "hi",
+                "template": "documented-authored-c522c7577193ebd4aaf5"
+              },
+              "value": {
+                "text": "40.0 dB · मध्यम श्रवण हानि",
+                "locale": "hi",
+                "template": "documented-authored-29d24fafdd7bcf8264c3",
+                "sourceNumbers": [
+                  40
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "त्रि-आवृत्ति औसत (500, 1k, 2k) दायाँ कान / बायाँ कान",
+                "locale": "hi",
+                "template": "documented-authored-3b0b7f4b8a22d06b838b"
+              },
+              "value": {
+                "text": "35.0 / 40.0 dB",
+                "locale": "hi",
+                "template": "documented-authored-0dc575b763e2f4b10984",
+                "sourceNumbers": [
+                  35,
+                  40
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "बेहतर कान के अनुसार डिग्री (WHO 2021): मध्यम श्रवण हानि",
+            "locale": "hi",
+            "template": "documented-authored-ed610079b283e9aa0f7a"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

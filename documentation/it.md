@@ -107,3 +107,62 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Grado in base all’orecchio migliore (OMS 2021): perdita uditiva lieve
+
+| Dettagli del risultato | |
+| --- | --- |
+| Orecchio destro (quattro frequenze) | 27,5 dB · perdita uditiva lieve |
+| Orecchio sinistro (quattro frequenze) | 37,5 dB · perdita uditiva moderata |
+| Media trifrequenziale (500, 1k, 2k) OD / OE | 25,0 / 35,0 dB |
+
+
+### 2
+
+Grado in base all’orecchio migliore (OMS 2021): udito normale
+
+| Dettagli del risultato | |
+| --- | --- |
+| Orecchio destro (quattro frequenze) | 10,0 dB · udito normale |
+| Orecchio sinistro (quattro frequenze) | 10,0 dB · udito normale |
+| Media trifrequenziale (500, 1k, 2k) OD / OE | 10,0 / 10,0 dB |
+
+
+### 3
+
+Perdita uditiva unilaterale (orecchio migliore < 20 dB e peggiore ≥ 35 dB)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Orecchio destro (quattro frequenze) | 13,8 dB · udito normale |
+| Orecchio sinistro (quattro frequenze) | 48,8 dB · perdita uditiva moderata |
+| Media trifrequenziale (500, 1k, 2k) OD / OE | 11,7 / 45,0 dB |
+
+
+### 4
+
+Grado in base all’orecchio migliore (OMS 2021): perdita uditiva grave
+
+| Dettagli del risultato | |
+| --- | --- |
+| Orecchio destro (quattro frequenze) | 77,5 dB · perdita uditiva grave |
+| Orecchio sinistro (quattro frequenze) | 87,5 dB · perdita uditiva profonda |
+| Media trifrequenziale (500, 1k, 2k) OD / OE | 75,0 / 85,0 dB |
+
+
+### 5
+
+Grado in base all’orecchio migliore (OMS 2021): perdita uditiva moderata
+
+| Dettagli del risultato | |
+| --- | --- |
+| Orecchio destro (quattro frequenze) | 35,0 dB · perdita uditiva moderata |
+| Orecchio sinistro (quattro frequenze) | 40,0 dB · perdita uditiva moderata |
+| Media trifrequenziale (500, 1k, 2k) OD / OE | 35,0 / 40,0 dB |
+

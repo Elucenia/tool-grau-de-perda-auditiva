@@ -107,3 +107,62 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Grad nach dem besseren Ohr (WHO 2021): leichte Hörminderung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechtes Ohr (Vierfrequenztöne) | 27,5 dB · leichte Hörminderung |
+| Linkes Ohr (Vierfrequenztöne) | 37,5 dB · mäßige Hörminderung |
+| Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr | 25,0 / 35,0 dB |
+
+
+### 2
+
+Grad nach dem besseren Ohr (WHO 2021): normales Hörvermögen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechtes Ohr (Vierfrequenztöne) | 10,0 dB · normales Hörvermögen |
+| Linkes Ohr (Vierfrequenztöne) | 10,0 dB · normales Hörvermögen |
+| Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr | 10,0 / 10,0 dB |
+
+
+### 3
+
+Einseitige Hörminderung (besseres Ohr < 20 dB und schlechteres ≥ 35 dB)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechtes Ohr (Vierfrequenztöne) | 13,8 dB · normales Hörvermögen |
+| Linkes Ohr (Vierfrequenztöne) | 48,8 dB · mäßige Hörminderung |
+| Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr | 11,7 / 45,0 dB |
+
+
+### 4
+
+Grad nach dem besseren Ohr (WHO 2021): schwere Hörminderung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechtes Ohr (Vierfrequenztöne) | 77,5 dB · schwere Hörminderung |
+| Linkes Ohr (Vierfrequenztöne) | 87,5 dB · hochgradige Hörminderung |
+| Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr | 75,0 / 85,0 dB |
+
+
+### 5
+
+Grad nach dem besseren Ohr (WHO 2021): mäßige Hörminderung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Rechtes Ohr (Vierfrequenztöne) | 35,0 dB · mäßige Hörminderung |
+| Linkes Ohr (Vierfrequenztöne) | 40,0 dB · mäßige Hörminderung |
+| Dreifrequenz-Mittelwert (500, 1k, 2k) rechtes Ohr / linkes Ohr | 35,0 / 40,0 dB |
+
